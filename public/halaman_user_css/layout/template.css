@@ -1,0 +1,31 @@
+/* Ubah warna navbar */
+
+.navbar {
+    background-color: #008080 !important;
+}
+
+.navbar-brand span{
+    font-weight: bold;
+}
+
+.navbar-brand {
+
+    color: white !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.navbar-nav a:hover{
+    font-weight: bold;
+
+}
+
+.row p{
+    font-weight: bold;
+}
+/* Footer */
+.bg-dark {
+    background-color:#008080 !important;
+}

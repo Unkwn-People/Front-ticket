@@ -1,0 +1,101 @@
+/* Container utama */
+.custom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Judul utama */
+.custom-container .title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Layout daftar museum */
+.museum-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+/* Kartu museum */
+.museum-card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.museum-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Gambar museum */
+.museum-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Informasi dalam kartu */
+.museum-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.museum-info h3 {
+    font-size: 1.25rem;
+    margin: 0 0 10px 0;
+    color: #222;
+}
+
+.museum-info p {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.harga {
+    font-weight: bold;
+    margin-top: auto;
+    color: #000;
+}
+
+/* Tombol Pesan */
+.btn-pesan {
+    display: block;
+    margin-top: 12px;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-pesan:hover {
+    background-color: #218838;
+}
+
+/* Responsive: tablet & mobile */
+@media (max-width: 768px) {
+    .museum-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .museum-card {
+        width: 90%;
+    }
+}
